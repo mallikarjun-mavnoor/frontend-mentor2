@@ -1,0 +1,222 @@
+/* ------------------- FONTS ------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import "//fonts.fontstorage.com/import/fraunces.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------- BODY ------------------- */
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #f3eae3;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------- CONTAINER ---------------- */
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+/* --------------- PRODUCT IMAGE -------------- */
+.container .image1 {
+  height: 422px;
+  border-radius: 10px 0 0 10px;
+  box-sizing: content-box;
+}
+
+/* ------------------- INFO ------------------- */
+
+.info {
+  padding: auto 10px;
+  margin: auto;
+  width: 100%;
+}
+
+#perfume {
+  letter-spacing: 4px;
+  font-size: 12px !important;
+}
+
+#perfume,
+#para {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: hsl(228, 12%, 48%);
+}
+
+#para {
+  line-height: 20px;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#heading,
+#p149 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#heading {
+  color: #1b222a;
+  line-height: 30px;
+}
+
+#p149 {
+  color: hsl(158, 36%, 37%);
+}
+
+#p169 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: line-through;
+  font-size: small;
+  vertical-align: 7px;
+  margin-left: 18px;
+  color: hsl(228, 12%, 48%);
+}
+
+p,
+.pricing,
+button {
+  margin: 20px;
+}
+
+/* ------------------ BUTTON ------------------ */
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  margin-right: 8px;
+}
+
+.image2 {
+  display: none;
+  width: 333px;
+  border-radius: 10px 10px 0 0;
+}
+
+.btncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --------------- MEDIA QUERIES -------------- */
+
+/* -------------------------------------------- */
+/*                    MOBILE                    */
+/* -------------------------------------------- */
+
+@media (min-width: 1280px and max-width: 1350px) {
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 700px and max-width: 885px) {
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 96%;
+  }
+
+  button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 395px) {
+  .image1 {
+    display: none;
+  }
+  .image2 {
+    display: block;
+  }
+
+  .image2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+}
